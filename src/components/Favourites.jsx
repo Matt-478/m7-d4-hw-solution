@@ -16,7 +16,7 @@ class Favourites extends React.Component {
           <Col xs={12}>
             <ListGroup>
               {
-                this.props.favourites.map(f => {
+                this.props.favourites.favouritesArray.map(f => {
                   return (
                     <ListGroupItem>
                        <StarFill onClick={() =>  this.props.removeFromFav(f) }/>
