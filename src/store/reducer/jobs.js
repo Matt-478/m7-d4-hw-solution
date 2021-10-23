@@ -8,7 +8,7 @@ export default function jobsReducer(state = initialState.jobs, action) {
     case 'DISPLAY_JOBS':
       return {
         ...state,
-        elements: [...state.elements, payload]
+        elements: payload
       }
 
     default: 
